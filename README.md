@@ -43,5 +43,5 @@ git submodule update --init --recursive
 ## Note
 
 - Please do not push any code to this repository directly.
-- Work on your respective submodules and push the code to the respective repositories. For the latest commits to be reflected in this repository, please run the 
+- Work on your respective submodules and push the code to the respective repositories. For the latest commits to be reflected in this repository, please run the `submodules` workflow from the Actions tab manually in GitHub.
 - No pull requests will be accepted to this repository.
