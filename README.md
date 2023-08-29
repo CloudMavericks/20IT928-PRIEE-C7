@@ -1,6 +1,10 @@
 # 20IT928-PRIEE-C7
 
-This is the base repository where all the codebases are linked to this repository as git submodules.
+This is the base repository which contains the submodules for the project _Inventory Management System for retailers_. The submodules are as follows:
+
+| S.No | Submodule Name | Repository Link |
+| --- | --- | --- |
+| 1 | Velocity.Backend | https://github.com/CloudMavericks/Velocity.Backend.git |
 
 Project CodeName: _Velocity_
 
@@ -10,7 +14,7 @@ Project Description: _Inventory Management System for retailers_
 
 ## Team Members
 
-| S.No | Name | Registration No |
+| S.No | Name | College Registration No |
 | --- | --- | --- | 
 | 1 | Sathiyaraman M | 111720102140 |
 | 2 | Sudharsan S V | 111720102129 |
@@ -29,8 +33,9 @@ git clone --recursive https://github.com/CloudMavericks/20IT928-PRIEE-C7.git
 
 This will clone the repository along with all the submodules.
 
-> Note: If you have already cloned the repository without the `--recursive` flag, then you can run the following command from the root of the repository to clone all the submodules.
+> Note: If you have already cloned the repository without the `--recursive` flag, then run the `update_submodules.sh` (for Linux/macOS) or `update_submodules.cmd` (Windows - Command Prompt) or `update_submodules.ps1` (for Windows - Powershell) script from the root of the repository to clone all the submodules. 
 
+> Alternatively you can run the following command from the root of the repository to clone all the submodules.
 ```bash
 git submodule update --init --recursive
 ```
