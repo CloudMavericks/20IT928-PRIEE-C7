@@ -9,8 +9,8 @@ git submodule update --init --recursive
 
 # Restore projects
 Write-Output "Restoring the Backend projects..."
-dotnet restore .\Velocity.Backend\Velocity.Backend.sln
+dotnet restore ..\Velocity.Backend\Velocity.Backend.sln
 
 # Build the projects
 Write-Output "Building the Backend projects..."
-dotnet build .\Velocity.Backend\Velocity.Backend.sln --configuration $Config --no-restore
+dotnet build ..\Velocity.Backend\Velocity.Backend.sln --configuration $Config --no-restore
