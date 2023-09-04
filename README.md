@@ -5,6 +5,7 @@ This is the base repository which contains the submodules for the project _Inven
 | S.No | Submodule Name | Repository Link |
 | --- | --- | --- |
 | 1 | Velocity.Backend | https://github.com/CloudMavericks/Velocity.Backend.git |
+| 2 | Velocity.Frontend | https://github.com/CloudMavericks/Velocity.Frontend.git |
 
 Project CodeName: _Velocity_
 
