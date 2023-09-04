@@ -1,3 +1,6 @@
 [submodule "Velocity.Backend"]
 	path = Velocity.Backend
 	url = https://github.com/CloudMavericks/Velocity.Backend.git
+[submodule "Velocity.Frontend"]
+	path = Velocity.Frontend
+	url = https://github.com/CloudMavericks/Velocity.Frontend.git
