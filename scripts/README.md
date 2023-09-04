@@ -2,6 +2,8 @@
 
 This directory contains scripts that are used to setup code, build, and run the projects.
 
+> **Tip**: You can directly invoke the scripts from your file explorer by double-clicking on them, with default parameters.
+
 ## Windows Batch Scripts
 
 | Script | Description | Usage |
