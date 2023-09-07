@@ -6,6 +6,7 @@ This is the base repository which contains the submodules for the project _Inven
 | --- | --- | --- |
 | 1 | Velocity.Backend | https://github.com/CloudMavericks/Velocity.Backend.git |
 | 2 | Velocity.Frontend | https://github.com/CloudMavericks/Velocity.Frontend.git |
+| 3 | Velocity.Shared | https://github.com/CloudMavericks/Velocity.Shared.git |
 
 Project CodeName: _Velocity_
 
@@ -21,7 +22,6 @@ Project Description: _Inventory Management System for retailers_
 | 2 | Sudharsan S V | 111720102129 |
 | 3 | Sairam J | 111720102133 |
 | 4 | Shree Ranganathan S | 111720102310 |
-
 
 
 ## How to clone this repository
@@ -40,6 +40,10 @@ This will clone the repository along with all the submodules.
 ```bash
 git submodule update --init --recursive
 ```
+
+## Deliverables
+
+- Abstract Presentation [Link](files/PRIEE_Abstract.pptx)
 
 ## Note
 
