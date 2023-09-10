@@ -1,8 +1,7 @@
 # Parameters
-param ($Config = "Debug", $LaunchProfile = "Kestrel")
+param ($Config = "Debug")
 
 Write-Output "Selected Build Configuration: $Config"
-Write-Output "Selected Launch Profile: $LaunchProfile"
 
 # Initialize and update submodules
 Write-Output "Initializing and updating submodules..."
@@ -18,4 +17,4 @@ dotnet build ..\Velocity.Backend\Velocity.Backend.sln --configuration $Config --
 
 # Run Backend project
 Write-Output "Running the Backend project..."
-dotnet run --project ..\Velocity.Backend\src\Velocity.API\Velocity.API.csproj --configuration $Config --no-build --launch-profile $LaunchProfile
+dotnet run --project ..\Velocity.Backend\src\Velocity.API\Velocity.API.csproj --configuration $Config --no-build --no-restore
