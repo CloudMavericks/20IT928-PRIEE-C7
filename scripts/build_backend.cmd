@@ -23,3 +23,6 @@ dotnet restore ..\Velocity.Backend\Velocity.Backend.sln
 :: Build the projects
 echo Building the Backend projects...
 dotnet build ..\Velocity.Backend\Velocity.Backend.sln --configuration %Config% --no-restore
+
+echo Press any key to continue...
+pause > nul

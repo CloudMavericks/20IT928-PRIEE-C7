@@ -2,7 +2,6 @@
 
 # Parameters
 Config="Debug"
-LaunchProfile="Kestrel"
 
 # Parse command-line arguments
 while [[ $# -gt 0 ]]; do
@@ -10,10 +9,6 @@ while [[ $# -gt 0 ]]; do
     case $key in
         --config=*)
             Config="${key#*=}"
-            shift
-            ;;
-        --launch-profile=*)
-            LaunchProfile="${key#*=}"
             shift
             ;;
         *)
@@ -25,7 +20,6 @@ while [[ $# -gt 0 ]]; do
 done
 
 echo "Selected Build Configuration: $Config"
-echo "Selected Launch Profile: $LaunchProfile"
 
 # Initialize and update submodules
 echo "Initializing and updating submodules..."
@@ -41,4 +35,4 @@ dotnet build ../Velocity.Backend/Velocity.Backend.sln --configuration $Config --
 
 # Run Backend project
 echo "Running the Backend project..."
-dotnet run --project ../Velocity.Backend/src/Velocity.API/Velocity.API.csproj --configuration $Config --no-build --launch-profile $LaunchProfile
+dotnet run --project ../Velocity.Backend/src/Velocity.API/Velocity.API.csproj --configuration $Config --no-build --no-restore

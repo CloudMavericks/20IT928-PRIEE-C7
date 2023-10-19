@@ -2,15 +2,11 @@
 
 :: Parameters
 set Config=Debug
-set LaunchProfile=Kestrel
 
 :: Parse command-line arguments
 for %%i in (%*) do (
     if "%%i"=="--config=Release" (
         set Config=Release
-    )
-    if "%%i"=="--launch-profile=IIS" (
-        set LaunchProfile=IIS Express
     )
 )
 
@@ -31,4 +27,4 @@ dotnet build ..\Velocity.Frontend\Velocity.Frontend.sln --configuration %Config%
 
 :: Run the Windows Forms project
 echo Running the Windows Forms project...
-dotnet run --project ..\Velocity.Frontend\src\Velocity.Frontend\Velocity.Frontend.csproj --configuration %Config% --no-build --launch-profile %LaunchProfile%
+dotnet run --project ..\Velocity.Frontend\src\Velocity.Frontend\Velocity.Frontend.csproj --configuration %Config% --no-build --no-restore
