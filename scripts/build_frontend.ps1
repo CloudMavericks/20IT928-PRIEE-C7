@@ -9,11 +9,8 @@ git submodule update --init --recursive
 
 # Restore projects
 Write-Output "Restoring the Frontend projects..."
-dotnet restore ..\Velocity.Frontend\Velocity.Frontend.sln
+dotnet restore ..\Velocity\src\Velocity.Frontend\Velocity.Frontend.csproj
 
 # Build the projects
 Write-Output "Building the Frontend projects..."
-dotnet build ..\Velocity.Frontend\Velocity.Frontend.sln --configuration $Config --no-restore
-
-echo "Press any key to continue..."
-read -n 1 -s
+dotnet build ..\Velocity\src\Velocity.Frontend\Velocity.Frontend.csproj --configuration $Config --no-restore

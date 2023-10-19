@@ -11,7 +11,6 @@ for %%i in (%*) do (
 )
 
 echo Selected Build Configuration: %Config%
-echo Selected Launch Profile: %LaunchProfile%
 
 :: Initialize and update submodules
 echo Initializing and updating submodules...
@@ -19,12 +18,12 @@ git submodule update --init --recursive
 
 :: Restore projects
 echo Restoring the Frontend projects...
-dotnet restore ..\Velocity.Frontend\Velocity.Frontend.sln
+dotnet restore ..\Velocity\src\Velocity.Frontend\Velocity.Frontend.csproj
 
 :: Build the projects
 echo Building the Frontend projects...
-dotnet build ..\Velocity.Frontend\Velocity.Frontend.sln --configuration %Config% --no-restore
+dotnet build ..\Velocity\src\Velocity.Frontend\Velocity.Frontend.csproj --configuration %Config% --no-restore
 
 :: Run the Windows Forms project
 echo Running the Windows Forms project...
-dotnet run --project ..\Velocity.Frontend\src\Velocity.Frontend\Velocity.Frontend.csproj --configuration %Config% --no-build --no-restore
+dotnet run --project ..\Velocity\src\Velocity.Frontend\Velocity.Frontend.csproj --configuration %Config% --no-build
