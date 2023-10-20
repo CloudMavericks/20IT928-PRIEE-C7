@@ -1,12 +1,6 @@
 # 20IT928-PRIEE-C7
 
-This is the base repository which contains the submodules for the project _Inventory Management System for retailers_. The submodules are as follows:
-
-| S.No | Submodule Name    | Repository Link                                         |
-|------|-------------------|---------------------------------------------------------|
-| 1    | Velocity.Backend  | https://github.com/CloudMavericks/Velocity.Backend.git  |
-| 2    | Velocity.Frontend | https://github.com/CloudMavericks/Velocity.Frontend.git |
-| 3    | Velocity.Shared   | https://github.com/CloudMavericks/Velocity.Shared.git   |
+This is the base repository which contains the necessary files and documents for the project _Inventory Management System for retailers_. The source code is present as a submodule in the `Velocity` folder. The submodule repository can be found [here](https://github.com/CloudMavericks/Velocity.git).
 
 Project CodeName: _Velocity_
 
@@ -48,5 +42,5 @@ git submodule update --init --recursive
 ## Note
 
 - Please do not push any code to this repository directly.
-- Work on your respective submodules and push the code to the respective repositories. The latest commits from the submodules will be pulled automatically to this repository via GitHub Actions.
+- To work on the source code, work on the code at **_Velocity_** repository. The latest commits from the submodule will be pulled automatically to this repository via GitHub Actions.
 - No pull requests will be accepted to this repository.
